@@ -309,24 +309,28 @@ namespace Calculator_V2
 
         void Reset()
         {
-            btn0.Enabled = true;
-            btn1.Enabled = true;
-            btn2.Enabled = true;
-            btn3.Enabled = true;
-            btn4.Enabled = true;
-            btn5.Enabled = true;
-            btn6.Enabled = true;
-            btn7.Enabled = true;
-            btn8.Enabled = true;
-            btn9.Enabled = true;
-            btnPlus.Enabled = true;
-            btnMinus.Enabled = true;
-            btnMultiply.Enabled = true;
-            btnDivide.Enabled = true;
-            btnBackSpace.Enabled = true;
-            btnDot.Enabled = true;
-            btnReverse.Enabled = true;
-            btnEqualls.Enabled = true;
+            if (CurrentMode == enModes.eError)
+            {
+                btn0.Enabled = true;
+                btn1.Enabled = true;
+                btn2.Enabled = true;
+                btn3.Enabled = true;
+                btn4.Enabled = true;
+                btn5.Enabled = true;
+                btn6.Enabled = true;
+                btn7.Enabled = true;
+                btn8.Enabled = true;
+                btn9.Enabled = true;
+                btnPlus.Enabled = true;
+                btnMinus.Enabled = true;
+                btnMultiply.Enabled = true;
+                btnDivide.Enabled = true;
+                btnBackSpace.Enabled = true;
+                btnDot.Enabled = true;
+                btnReverse.Enabled = true;
+                btnEqualls.Enabled = true;
+            }
+            
 
             lbResult.Text = "0";
             UpdateCurrentValue();
